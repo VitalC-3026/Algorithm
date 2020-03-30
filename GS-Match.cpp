@@ -38,7 +38,7 @@ int main()
 	for (int i = n - 1; i >= 0; i--) {
 		man_to_match.push(i);
 	}
-	// int man2match = 0;
+	
 	while (!man_to_match.empty()) {
 		int man2match = man_to_match.top();
 		int index_woman = man[man2match][n];
@@ -72,7 +72,6 @@ int main()
 		cout << man_match[i] << " ";
 	}
 	cout << endl;
-
 	return 0;
 }
 
