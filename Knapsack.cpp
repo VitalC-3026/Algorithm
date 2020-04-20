@@ -27,7 +27,12 @@ int Knapsack(int n, int w, int value[][2]) {
 		}
 		
 	}
-	return opt[n][w];
+	int res = opt[n][w];
+	for (int i = 0; i < n + 1; i++) {
+		delete[] opt[i];
+	}
+	delete[] opt;
+	return res;
 }
 
 
